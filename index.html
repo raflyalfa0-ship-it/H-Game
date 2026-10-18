@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5eee8">
+  <meta name="description" content="Generator character sheet anime 2D dengan karakter acak, palet warna, dan ekspor PNG.">
+  <title>Anime Character Sheet Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Anime Sheet Studio home"><span class="brand-mark">✦</span> Anime Sheet Studio</a>
+    <span class="top-note">2D CHARACTER DESIGN TOOL</span>
+  </header>
+
+  <main class="layout">
+    <section class="intro">
+      <p class="eyebrow">RANDOM DESIGN LAB</p>
+      <h1>Temukan karakter<br><em>anime</em> berikutnya.</h1>
+      <p class="intro-copy">Buat konsep karakter baru, lihat lembar desainnya, lalu ekspor hasilnya sebagai gambar PNG.</p>
+      <div class="actions">
+        <button id="randomizeBtn" class="button primary">✦ Acak karakter</button>
+        <button id="downloadBtn" class="button secondary">↓ Ekspor PNG</button>
+      </div>
+      <p id="status" class="status" role="status">Siap membuat karakter baru.</p>
+    </section>
+
+    <section class="workspace" aria-label="Pratinjau dan pengaturan karakter">
+      <div class="preview-head">
+        <div>
+          <p class="eyebrow">CHARACTER SHEET / 001</p>
+          <h2 id="characterTitle">Mika Aozora</h2>
+        </div>
+        <span class="live-pill"><span></span> LIVE PREVIEW</span>
+      </div>
+
+      <div class="sheet-wrap">
+        <svg id="characterSheet" viewBox="0 0 900 680" role="img" aria-label="Lembar desain karakter anime 2D">
+          <!-- The app replaces this SVG with a generated character sheet. -->
+        </svg>
+      </div>
+
+      <div class="settings">
+        <div class="setting">
+          <label for="styleSelect">Gaya karakter</label>
+          <select id="styleSelect">
+            <option value="school">School fantasy</option>
+            <option value="street">Urban streetwear</option>
+            <option value="fantasy">Fantasy adventurer</option>
+            <option value="sci-fi">Sci-fi academy</option>
+          </select>
+        </div>
+        <div class="setting">
+          <label for="hairSelect">Warna rambut</label>
+          <select id="hairSelect">
+            <option value="random">Acak</option>
+            <option value="#27253c">Midnight</option>
+            <option value="#7b3f54">Rose brown</option>
+            <option value="#e6b95f">Honey blonde</option>
+            <option value="#7199c8">Sky blue</option>
+            <option value="#a58ac8">Lavender</option>
+            <option value="#b75e45">Copper</option>
+          </select>
+        </div>
+        <div class="setting">
+          <label for="moodSelect">Ekspresi</label>
+          <select id="moodSelect">
+            <option value="random">Acak</option>
+            <option value="happy">Ceria</option>
+            <option value="calm">Tenang</option>
+            <option value="confident">Percaya diri</option>
+            <option value="shy">Malu</option>
+          </select>
+        </div>
+        <div class="setting">
+          <label for="paletteSelect">Palet warna</label>
+          <select id="paletteSelect">
+            <option value="random">Acak</option>
+            <option value="sakura">Sakura</option>
+            <option value="ocean">Ocean</option>
+            <option value="sunset">Sunset</option>
+            <option value="forest">Forest</option>
+            <option value="mono">Monochrome</option>
+          </select>
+        </div>
+      </div>
+      <p class="footnote">Karakter dibuat dari ilustrasi vektor SVG orisinal yang dapat disimpan sebagai PNG. Ini bukan model AI pembuat gambar.</p>
+    </section>
+  </main>
+
+  <footer><span>Anime Sheet Studio</span><span>Made for character concepting · GitHub Pages ready</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
